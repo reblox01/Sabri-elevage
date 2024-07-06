@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import toast from "react-hot-toast";
-import SocialSignIn from "../SocialSignIn";
+// import SocialSignIn from "../SocialSignIn";
 import SwitchOption from "../SwitchOption";
 import MagicLink from "../MagicLink";
 import Loader from "@/components/Common/Loader";
@@ -76,13 +76,10 @@ const Signin = () => {
                 </Link>
               </div>
 
-              <SocialSignIn />
+              {/* <SocialSignIn /> */}
 
               <span className="z-1 relative my-8 block text-center">
                 <span className="-z-1 absolute left-0 top-1/2 block h-px w-full bg-stroke dark:bg-dark-3"></span>
-                <span className="text-body-secondary relative z-10 inline-block bg-white px-3 text-base dark:bg-dark-2">
-                  OR
-                </span>
               </span>
 
               <SwitchOption
@@ -118,7 +115,7 @@ const Signin = () => {
                       type="submit"
                       className="flex w-full cursor-pointer items-center justify-center rounded-md border border-primary bg-primary px-5 py-3 text-base text-white transition duration-300 ease-in-out hover:bg-primary/90"
                     >
-                      Sign In {loading && <Loader />}
+                      Se Connecter {loading && <Loader />}
                     </button>
                   </div>
                 </form>
@@ -126,18 +123,6 @@ const Signin = () => {
                 <MagicLink />
               )}
 
-              <Link
-                href="/forgot-password"
-                className="mb-2 inline-block text-base text-dark hover:text-primary dark:text-white dark:hover:text-primary"
-              >
-                Forget Password?
-              </Link>
-              <p className="text-body-secondary text-base">
-                Not a member yet?{" "}
-                <Link href="/signup" className="text-primary hover:underline">
-                  Sign Up
-                </Link>
-              </p>
 
               <div>
                 <span className="absolute right-1 top-1">
