@@ -36,9 +36,9 @@ const Signin = () => {
         }
 
         if (callback?.ok && !callback?.error) {
-          toast.success("Login successful");
+          toast.success("Bonjour Administrateur!");
           setLoading(false);
-          router.push("/home");
+          router.push("/tables");
         }
       })
       .catch((err) => {
