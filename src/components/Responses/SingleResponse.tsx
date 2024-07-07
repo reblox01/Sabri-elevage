@@ -1,8 +1,8 @@
 import { Response } from "@/types/response";
-import Link from "next/link";
+// import Link from "next/link";
 
 const SingleResponse = ({ response }: { response: Response }) => {
-  const { icon, title, paragraph, btn, btnLink } = response;
+  const { icon, title, paragraph } = response;
   return (
     <div className="w-full px-4 md:w-1/2 lg:w-1/4">
       <div className="wow fadeInUp group mb-12" data-wow-delay=".15s">
@@ -16,12 +16,6 @@ const SingleResponse = ({ response }: { response: Response }) => {
         <p className="mb-8 text-body-color dark:text-dark-6 lg:mb-11">
           {paragraph}
         </p>
-        <Link
-          href={btnLink}
-          className="text-base font-medium text-dark hover:text-primary dark:text-white dark:hover:text-primary"
-        >
-          {btn}
-        </Link>
       </div>
     </div>
   );
