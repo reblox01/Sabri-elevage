@@ -1,18 +1,18 @@
 // import Breadcrumb from "@/components/Common/Breadcrumb";
-import Poulettes from "@/components/Poulettes";
+import Dindes from "@/components/Admin/Tables/Dindes";
 // import Team from "@/components/Team";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title:
-    "Mostafa PC | Sabri Élevage",
+    "Dindes | Sabri Élevage",
   description: "This is Pourquoi Nous page description",
 };
 
-const PoulettesPage = () => {
+const DindesPage = () => {
   return (
     <main>
-      <Poulettes searchParams={{
+      <Dindes searchParams={{
         q: "",
         offset: ""
       }} />
@@ -20,4 +20,4 @@ const PoulettesPage = () => {
   );
 };
 
-export default PoulettesPage;
+export default DindesPage;

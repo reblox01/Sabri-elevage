@@ -1,18 +1,18 @@
 // import Breadcrumb from "@/components/Common/Breadcrumb";
-import Home from "@/components/Tables";
+import Poulettes from "@/components/Admin/Tables/Poulettes";
 // import Team from "@/components/Team";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title:
-    "Tableaux | Sabri Élevage",
+    "Mostafa PC | Sabri Élevage",
   description: "This is Pourquoi Nous page description",
 };
 
-const HomePage = () => {
+const PoulettesPage = () => {
   return (
     <main>
-      <Home searchParams={{
+      <Poulettes searchParams={{
         q: "",
         offset: ""
       }} />
@@ -20,4 +20,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default PoulettesPage;
