@@ -1,7 +1,8 @@
 import Breadcrumb from "@/components/Common/Breadcrumb";
+import Responses from "@/components/Responses";
 import WhyUs from "@/components/WhyUs";
 // import Team from "@/components/Team";
-import Features from "@/components/Features";
+// import Features from "@/components/Features";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -18,7 +19,7 @@ const AboutPage = () => {
     <main>
       <Breadcrumb pageName="Pourquoi Nous" />
       <WhyUs />
-      <Features />
+      <Responses />
     </main>
   );
 };

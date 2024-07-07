@@ -1,18 +1,18 @@
 // import Breadcrumb from "@/components/Common/Breadcrumb";
-import Dindes from "@/components/Dindes";
+import Home from "@/components/Admin/Tables";
 // import Team from "@/components/Team";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title:
-    "Dindes | Sabri Élevage",
-  description: "This is Pourquoi Nous page description",
+    "Tableaux | Sabri Élevage",
+  description: "Les Tableaux de l'entrepries",
 };
 
-const DindesPage = () => {
+const HomePage = () => {
   return (
     <main>
-      <Dindes searchParams={{
+      <Home searchParams={{
         q: "",
         offset: ""
       }} />
@@ -20,4 +20,4 @@ const DindesPage = () => {
   );
 };
 
-export default DindesPage;
+export default HomePage;
