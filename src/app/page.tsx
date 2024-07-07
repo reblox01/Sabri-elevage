@@ -31,7 +31,7 @@ export default function Home() {
       {/* <Pricing /> */}
       <Testimonials />
       <Faq />
-      <Team />
+      
       <HomeBlogSection posts={posts} />
       <Contact />
       <Clients />
