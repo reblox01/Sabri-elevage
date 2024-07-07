@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 import { useState } from "react";
 import toast from "react-hot-toast";
 // import SocialSignIn from "../SocialSignIn";
-import SwitchOption from "../SwitchOption";
+// import SwitchOption from "../SwitchOption";
 import MagicLink from "../MagicLink";
 import Loader from "@/components/Common/Loader";
 
@@ -19,7 +19,7 @@ const Signin = () => {
     checkboxToggle: false,
   });
 
-  const [isPassword, setIsPassword] = useState(false);
+  const [isPassword, setIsPassword] = useState(true);
   const [loading, setLoading] = useState(false);
 
   const loginUser = (e: any) => {
@@ -82,10 +82,10 @@ const Signin = () => {
                 <span className="-z-1 absolute left-0 top-1/2 block h-px w-full bg-stroke dark:bg-dark-3"></span>
               </span>
 
-              <SwitchOption
+              {/* <SwitchOption
                 isPassword={isPassword}
                 setIsPassword={setIsPassword}
-              />
+              /> */}
 
               {isPassword ? (
                 <form onSubmit={(e) => e.preventDefault()}>
