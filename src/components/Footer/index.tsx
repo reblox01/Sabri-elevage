@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
 import Link from "next/link";
 import { ShapeIcon, SpaceIcon } from "../icons";
@@ -24,8 +25,8 @@ const Footer = () => {
                 />
               </Link>
               <p className="mb-8 max-w-[270px] text-base text-gray-7">
-                We create digital experiences for brands and companies by using
-                technology.
+                Votre partenaire de confiance pour l'achat de poulets vivants.
+                Engagés envers la qualité, le bien-être animal et la durabilité.
               </p>
               <div className="-mx-3 flex items-center">
                 <a
