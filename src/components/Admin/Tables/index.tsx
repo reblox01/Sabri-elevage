@@ -29,11 +29,11 @@ export default async function IndexPage({
       <div className='flex items-center mb-10'>
         <Button variant="outline">
           <DindeIcon className="h-5 w-5 mr-1" />
-                <Link href="/dindes">Dindes</Link>
+                <Link href="/admin/tables/dindes">Dindes</Link>
         </Button>
         <Button variant="outline" className='ml-4'>
           <PouletIcon className="h-5 w-5 mr-1" />
-                <Link href="/poulettes">Poulettes - Mostafa PC</Link>
+                <Link href="/admin/tables/poulettes">Poulettes - Mostafa PC</Link>
         </Button>
       </div>
       <li className="font-bold text-lg md:text-2xl mb-3 ml-5">Dinde</li>
