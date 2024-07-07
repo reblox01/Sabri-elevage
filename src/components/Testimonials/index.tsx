@@ -37,11 +37,13 @@ const Testimonials = () => {
     <section className="bg-gray-1 py-20 dark:bg-dark-2 md:py-[120px]">
       <div className="container px-4">
         <SectionTitle
-          subtitle="Testimonials"
-          title="What our Client Say"
-          paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+          // subtitle="Testimonials"
+          title="Ce que Disent nos Clients"
           width="640px"
           center
+          paragraph="There are many variations of passages of Lorem
+           Ipsum available but the majority have suffered alteration in some form."
+          
         />
 
         <div className="mt-[60px] flex flex-wrap lg:mt-20 gap-y-8">
