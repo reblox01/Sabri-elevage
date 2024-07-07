@@ -129,7 +129,7 @@ const Footer = () => {
                 <p className="text-base text-gray-7">
                   © {currentYear}{" "}
                   <a
-                    href="https://tailgrids.com"
+                    href="/#"
                     rel="nofollow noopner noreferrer"
                     target="_blank"
                     className="text-gray-1 hover:underline"
