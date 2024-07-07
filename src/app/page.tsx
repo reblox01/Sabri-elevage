@@ -3,7 +3,9 @@ import Clients from "@/components/Clients";
 import ScrollUp from "@/components/Common/ScrollUp";
 import Contact from "@/components/Contact";
 import Hero from "@/components/Hero";
+import Responses from "@/components/Responses";
 import Testimonials from "@/components/Testimonials";
+import WhyUs from "@/components/WhyUs";
 import { Metadata } from "next";
 
 // import CallToAction from "@/components/CallToAction";
@@ -31,6 +33,8 @@ export default function Home() {
       {/* <Features /> */}
       <About />
       {/* <CallToAction /> */}
+      <Responses />
+      <WhyUs />
       {/* <Pricing /> */}
       <Testimonials />
       {/* <Faq /> */}

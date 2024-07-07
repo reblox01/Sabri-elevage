@@ -25,17 +25,17 @@ export default async function IndexPage({
       </div>
       <div className='flex items-center mb-10'>
       <Button variant="alternative">
-          <Link href="/home">
+          <Link href="/admin/tables">
             <BackIcon className="h-5 w-5" />
           </Link>
         </Button>
         <Button variant="alternative">
           <DindeIcon className="h-5 w-5 mr-1" />
-                <Link href="/dindes">Dinde</Link>
+                <Link href="/admin/tables/dindes">Dinde</Link>
         </Button>
         <Button variant="alternative">
           <SettingsIcon className="h-5 w-5 mr-1" />
-                <Link href="https://astradev.budibase.app/app/mostafa-pc">Admin</Link>
+                <Link href="https://astradev.budibase.app/app/mostafa-pc" target='_blank'>Admin</Link>
         </Button>
       </div>
       <iframe width="100%" height="700" frameBorder="0" style={dinde} allow="clipboard-write;camera;geolocation;fullscreen" src="https://astradev.budibase.app/embed/mostafa-pc"></iframe>

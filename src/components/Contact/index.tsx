@@ -7,8 +7,8 @@ import { motion } from 'framer-motion';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    fullName: '',
-    email: '',
+    user_name: '',
+    user_email: '',
     phone: '',
     message: ''
   });
@@ -28,13 +28,19 @@ const Contact = () => {
 
     setFormStatus('sending');
 
-    const form = e.target as HTMLFormElement;
+    const templateParams = {
+      from_name: formData.user_name,
+      to_name: "Sabri Elevage",
+      from_email: formData.user_email,
+      to_email: "sabrielevage@gmail.com",
+      message: formData.message,
+    };
 
-    emailjs.sendForm(
-      'service_qpob0ac',
-      'template_2rt7zrf',
-      form,
-      'VyqaLcQxebfs6Q3Yq'
+    emailjs.send(
+      'service_9g2a08u',
+      'template_nvclyyi',
+      templateParams,
+      '8-N_lD0j9AIatgk1n'
     )
     .then((result) => {
       console.log(result.text);
@@ -45,8 +51,8 @@ const Contact = () => {
     });
 
     setFormData({
-      fullName: '',
-      email: '',
+      user_name: '',
+      user_email: '',
       phone: '',
       message: ''
     });
@@ -86,7 +92,7 @@ const Contact = () => {
                     Notre Emplacement
                     </h3>
                     <p className="text-base text-body-color dark:text-dark-6">
-                      401 Broadway, 24th Floor, Orchard Cloud View, London
+                      401 Broadway, 24th Floor, Orchard Cloud View, Maroc
                     </p>
                   </div>
                 </div>
@@ -106,10 +112,10 @@ const Contact = () => {
                     Comment Pouvons-Nous Vous Aider?
                     </h3>
                     <p className="text-base text-body-color dark:text-dark-6">
-                      info@yourdomain.com
+                      +212 600-663-181
                     </p>
                     <p className="mt-1 text-base text-body-color dark:text-dark-6">
-                      contact@yourdomain.com
+                      sabrielevage@gmail.com
                     </p>
                   </div>
                 </div>
@@ -134,9 +140,9 @@ const Contact = () => {
                   </label>
                   <input
                     type="text"
-                    name="fullName"
+                    name="user_name"
                     placeholder="Adam Gelius"
-                    value={formData.fullName}
+                    value={formData.user_name}
                     onChange={handleChange}
                     className="w-full border-0 border-b border-[#f1f1f1] bg-transparent pb-3 text-dark placeholder:text-body-color/60 focus:border-primary focus:outline-none dark:border-dark-3 dark:text-white"
                     required
@@ -148,9 +154,9 @@ const Contact = () => {
                   </label>
                   <input
                     type="email"
-                    name="email"
+                    name="user_email"
                     placeholder="example@yourmail.com"
-                    value={formData.email}
+                    value={formData.user_email}
                     onChange={handleChange}
                     className="w-full border-0 border-b border-[#f1f1f1] bg-transparent pb-3 text-dark placeholder:text-body-color/60 focus:border-primary focus:outline-none dark:border-dark-3 dark:text-white"
                     required
@@ -158,7 +164,7 @@ const Contact = () => {
                 </div>
                 <div className="mb-[22px]">
                   <label htmlFor="phone" className="mb-4 block text-sm text-body-color dark:text-dark-6">
-                    Téléphone*
+                    Téléphone (facultatif)
                   </label>
                   <input
                     type="text"
@@ -167,7 +173,6 @@ const Contact = () => {
                     value={formData.phone}
                     onChange={handleChange}
                     className="w-full border-0 border-b border-[#f1f1f1] bg-transparent pb-3 text-dark placeholder:text-body-color/60 focus:border-primary focus:outline-none dark:border-dark-3 dark:text-white"
-                    required
                   />
                 </div>
                 <div className="mb-[30px]">

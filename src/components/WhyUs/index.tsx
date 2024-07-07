@@ -1,9 +1,10 @@
+/* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
 
 const WhyUs = () => {
   return (
     <section
-      id="about"
+      id="pourquoi"
       className="bg-gray-1 pb-8 pt-20 dark:bg-dark-2 lg:pb-[70px] lg:pt-[120px]"
     >
       <div className="container">
@@ -12,17 +13,17 @@ const WhyUs = () => {
             <div className="w-full px-4 lg:w-1/2">
               <div className="mb-12 max-w-[540px] lg:mb-0">
                 <h2 className="mb-5 text-3xl font-bold leading-tight text-dark dark:text-white sm:text-[40px] sm:leading-[1.2]">
-                  Brilliant Toolkit to Build Next.js SaaS Websites.
+                  Pourquoi Nous : Excellence, Bien-être Animal et Durabilité
                 </h2>
                 <p className="mb-10 text-base leading-relaxed text-body-color dark:text-dark-6">
-                  The main thrust is to focus on educating attendees on how to
-                  best protect highly vulnerable business applications with
-                  interactive panel discussions and roundtables led by subject
-                  matter experts.
+                  Nous veillons au bien-être animal en élevant nos poulets dans des conditions optimales, 
+                  avec une alimentation équilibrée et des soins vétérinaires réguliers. 
                   <br /> <br />
-                  The main thrust is to focus on educating attendees on how to
-                  best protect highly vulnerable business applications with
-                  interactive panel.
+                  La qualité est notre priorité, garantissant des volailles robustes et 
+                  en bonne santé grâce à une attention constante. Nous adoptons des pratiques 
+                  agricoles durables pour minimiser notre impact sur l'environnement et 
+                  favoriser la biodiversité. Enfin, nous assurons une traçabilité complète 
+                  de nos poulets, de l'élevage à la vente, offrant ainsi transparence et confiance à nos clients.
                 </p>
               </div>
             </div>
@@ -34,8 +35,8 @@ const WhyUs = () => {
                     className={`relative mb-4 sm:mb-8 sm:h-[400px] md:h-[540px] lg:h-[400px] xl:h-[500px] `}
                   >
                     <Image
-                      src="/images/about/about-image-01.jpg"
-                      alt="about image"
+                      src="/images/pourquoi/pourquoi-image-01.jpg"
+                      alt="pourquoi image"
                       fill
                       className="h-full w-full object-cover object-center"
                     />
@@ -45,8 +46,8 @@ const WhyUs = () => {
                 <div className="w-full px-2 sm:w-1/2 sm:px-4 lg:px-2 xl:px-4">
                   <div className="relative mb-4 sm:mb-8 sm:h-[220px] md:h-[346px] lg:mb-4 lg:h-[225px] xl:mb-8 xl:h-[310px]">
                     <Image
-                      src="/images/about/about-image-02.jpg"
-                      alt="about image"
+                      src="/images/pourquoi/pourquoi-image-02.jpg"
+                      alt="pourquoi image"
                       fill
                       className="h-full w-full object-cover object-center"
                     />
@@ -55,13 +56,13 @@ const WhyUs = () => {
                   <div className="relative z-10 mb-4 flex items-center justify-center overflow-hidden bg-primary px-6 py-12 sm:mb-8 sm:h-[160px] sm:p-5 lg:mb-4 xl:mb-8">
                     <div>
                       <span className="block text-5xl font-extrabold text-white">
-                        09
+                        20
                       </span>
                       <span className="block text-base font-semibold text-white">
-                        We have
+                        Nous avons
                       </span>
                       <span className="block text-base font-medium text-white text-opacity-70">
-                        Years of experience
+                        Des années d'expérience
                       </span>
                     </div>
                     <div>
