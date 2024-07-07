@@ -131,7 +131,6 @@ const Footer = () => {
                   <a
                     href="/#"
                     rel="nofollow noopner noreferrer"
-                    target="_blank"
                     className="text-gray-1 hover:underline"
                   >
                     Sabri Élevage Inc.
