@@ -5,14 +5,14 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title:
-    "About Us | Sabri elevage",
-  description: "This is About page description",
+    "À propos | Sabri elevage",
+  description: "This is À propos page description",
 };
 
 const AboutPage = () => {
   return (
     <main>
-      <Breadcrumb pageName="About Us Page" />
+      <Breadcrumb pageName="À propos de nous" />
       <About />
       <Team />
     </main>

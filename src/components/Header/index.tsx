@@ -317,7 +317,7 @@ const Header = () => {
                       <>
                         <Link
                           href="/signin"
-                          className="rounded-lg bg-primary px-6 py-3 text-base font-medium text-white duration-300 ease-in-out hover:bg-primary/90 dark:bg-white/10 dark:hover:bg-white/20"
+                          className="rounded-lg bg-primary px-6 py-3 text-base ml-5 font-medium text-white duration-300 ease-in-out hover:bg-primary/90 dark:bg-white/10 dark:hover:bg-white/20"
                         >
                          Se Connecter
                         </Link>

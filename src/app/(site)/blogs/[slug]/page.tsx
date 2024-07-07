@@ -21,8 +21,8 @@ export async function generateMetadata({ params }: Props) {
     "metadata",
   ]);
 
-  const siteName = process.env.SITE_NAME || "Your Site Name";
-  const authorName = process.env.AUTHOR_NAME || "Your Author Name";
+  const siteName = process.env.SITE_NAME || "Sabri elevage";
+  const authorName = process.env.AUTHOR_NAME || "Sabri elevage";
 
   if (post) {
     const metadata = {
