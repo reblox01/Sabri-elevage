@@ -1,6 +1,7 @@
-'use client';
+/* eslint-disable react/no-unescaped-entities */
+"use client";
 
-import { useState } from 'react';
+import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import { motion } from 'framer-motion';
 
@@ -9,39 +10,45 @@ const Contact = () => {
     fullName: '',
     email: '',
     phone: '',
-    message: '',
+    message: ''
   });
-  const [formStatus, setFormStatus] = useState('idle'); // States: idle, sending, success, error
 
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+  const [formStatus, setFormStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle');
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData((prevFormData) => ({
+      ...prevFormData,
+      [name]: value
+    }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    setFormStatus('sending'); // Start sending state
+    setFormStatus('sending');
+
+    const form = e.target as HTMLFormElement;
 
     emailjs.sendForm(
-      'service_qpob0ac', // Replace with your EmailJS service ID
-      'template_2rt7zrf', // Replace with your EmailJS template ID
-      e.target,
-      'VyqaLcQxebfs6Q3Yq' // Replace with your EmailJS user ID
+      'service_qpob0ac',
+      'template_2rt7zrf',
+      form,
+      'VyqaLcQxebfs6Q3Yq'
     )
     .then((result) => {
       console.log(result.text);
-      setFormStatus('success'); // On successful submission
+      setFormStatus('success');
     }, (error) => {
       console.log(error.text);
-      setFormStatus('error'); // On error
+      setFormStatus('error');
     });
 
-    // Reset form fields after submission (optional)
     setFormData({
       fullName: '',
       email: '',
       phone: '',
-      message: '',
+      message: ''
     });
   };
 

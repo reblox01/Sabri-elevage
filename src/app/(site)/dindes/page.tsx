@@ -5,7 +5,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title:
-    "Dindes | Sabri elevage",
+    "Dindes | Sabri Élevage",
   description: "This is Pourquoi Nous page description",
 };
 

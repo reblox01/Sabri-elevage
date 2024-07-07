@@ -4,7 +4,7 @@ import Breadcrumb from "@/components/Common/Breadcrumb";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Forgot Password | Sabri elevage",
+  title: "Forgot Password | Sabri Élevage",
 };
 
 const ForgotPasswordPage = () => {

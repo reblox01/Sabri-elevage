@@ -1,11 +1,11 @@
 // import Breadcrumb from "@/components/Common/Breadcrumb";
-import Home from "@/components/Home";
+import Home from "@/components/Tables";
 // import Team from "@/components/Team";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title:
-    "Tableaux | Sabri elevage",
+    "Tableaux | Sabri Élevage",
   description: "This is Pourquoi Nous page description",
 };
 

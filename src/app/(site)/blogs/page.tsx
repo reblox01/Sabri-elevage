@@ -5,7 +5,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title:
-    "Blog Grids | Sabri elevage",
+    "Blog Grids | Sabri Élevage",
   description: "Blog grids page description",
 };
 
