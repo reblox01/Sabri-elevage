@@ -39,7 +39,7 @@ const Signin = () => {
         if (callback?.ok && !callback?.error) {
           toast.success("Bonjour Administrateur!");
           setLoading(false);
-          router.push("/");
+          router.push("/admin/tables");
         }
       })
       .catch((err) => {
