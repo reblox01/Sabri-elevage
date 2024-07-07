@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   keywords: "Sabri Élevage, élevage de qualité, engagement envers l'excellence, pratiques durables, soin exceptionnel, élevage, agriculture, animaux, éleveurs",
   authors: [{ name: "Sabri Élevage" }],
   robots: "index, follow",
-  viewport: "width=device-width, initial-scale=1.0",
+
 };
 
 const AboutPage = () => {

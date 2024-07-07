@@ -19,7 +19,6 @@ export const metadata: Metadata = {
   description: "Découvrez Sabri Élevage, spécialiste en élevage de poulets vivants de qualité. Nous sommes fiers de notre engagement envers le bien-être animal et la durabilité. Contactez-nous dès aujourd'hui pour en savoir plus!",
   keywords: "Sabri Élevage, poulets vivants, élevage de poulets, bien-être animal, qualité, durabilité, agriculture",
   robots: "index, follow",
-  viewport: "width=device-width, initial-scale=1.0",
 };
 
 export default function Home() {
