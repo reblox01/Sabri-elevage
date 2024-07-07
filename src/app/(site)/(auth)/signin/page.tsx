@@ -4,13 +4,13 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title:
-    "Sign In | Sabri Élevage",
+    "Se Connecter | Sabri Élevage",
 };
 
 const SigninPage = () => {
   return (
     <>
-      <Breadcrumb pageName="Sign In Page" />
+      <Breadcrumb pageName="Se Connecter" />
 
       <Signin />
     </>
