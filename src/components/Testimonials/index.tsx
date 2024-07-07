@@ -39,10 +39,11 @@ const Testimonials = () => {
         <SectionTitle
           // subtitle="Testimonials"
           title="Ce que Disent nos Clients"
-          width="640px"
-          center
+          
           paragraph="There are many variations of passages of Lorem
            Ipsum available but the majority have suffered alteration in some form."
+           width="640px"
+          center
           
         />
 
