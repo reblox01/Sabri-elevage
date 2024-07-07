@@ -320,14 +320,14 @@ const Header = () => {
                         onClick={() => signOut()}
                         className="signUpBtn rounded-lg bg-primary bg-opacity-100 px-6 py-3 text-base font-medium text-white duration-300 ease-in-out hover:bg-opacity-20 hover:text-dark"
                       >
-                        Disconnect
+                        Se Déconnecter
                       </button>
                     ) : (
                       <button
                         onClick={() => signOut()}
                         className="signUpBtn rounded-lg bg-white bg-opacity-20 px-6 py-3 text-base font-medium text-white duration-300 ease-in-out hover:bg-opacity-100 hover:text-dark"
                       >
-                        Disconnect
+                        Se Déconnecter
                       </button>
                     )}
                   </>
