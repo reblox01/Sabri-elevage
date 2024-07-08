@@ -263,12 +263,20 @@ const Header = () => {
                         <>
                         <button
                           onClick={() => signOut()}
-                          className="text-dark hover:text-primary dark:text-white dark:hover:text-primary"
+                          className={`ud-menu-scroll flex py-2 text-base lg:inline-flex lg:px-0 lg:py-6 ${
+                            sticky
+                              ? "text-dark group-hover:text-primary dark:text-white dark:group-hover:text-primary"
+                              : "text-body-color dark:text-white lg:text-white"
+                          }`}
                         >
                           Se Déconnecter
                         </button>
                         <button
-                        className="text-dark hover:text-primary dark:text-white dark:hover:text-primary"
+                        className={`ud-menu-scroll flex py-2 text-base lg:inline-flex lg:px-0 lg:py-6 ${
+                          sticky
+                            ? "text-dark group-hover:text-primary dark:text-white dark:group-hover:text-primary"
+                            : "text-body-color dark:text-white lg:text-white"
+                        }`}
                       >
                         <Link
                         href="/admin/tables">
@@ -278,8 +286,12 @@ const Header = () => {
                         </>
                       ) : (
                         <Link
-                          href="/login"
-                          className="text-dark hover:text-primary dark:text-white dark:hover:text-primary"
+                          href="/signin"
+                          className={`ud-menu-scroll flex py-2 text-base lg:inline-flex lg:px-0 lg:py-6 ${
+                            sticky
+                              ? "text-dark group-hover:text-primary dark:text-white dark:group-hover:text-primary"
+                              : "text-body-color dark:text-white lg:text-white"
+                          }`}
                         >
                           Se Connecter
                         </Link>
