@@ -124,7 +124,6 @@ const Signin = () => {
                 <MagicLink />
               )}
 
-
               <div>
                 <span className="absolute right-1 top-1">
                   <BlueCubeIcon />

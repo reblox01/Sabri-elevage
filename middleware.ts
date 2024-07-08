@@ -2,8 +2,8 @@ export { default } from "next-auth/middleware";
 
 export const config = {
     matcher: [
-        "/home",
-        "/dinde",
-        "/poulettes"
+        "/admin/tables",
+        "/admin/tables/dindes",
+        "/admin/tables/poulettes"
     ]
 }
