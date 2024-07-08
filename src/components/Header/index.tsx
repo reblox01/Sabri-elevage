@@ -255,6 +255,38 @@ const Header = () => {
                         </li>
                       ),
                     )}
+                    
+
+                    {/* this */}
+                    <li className="lg:hidden">
+                      {session ?.user ? (
+                        <>
+                        <button
+                          onClick={() => signOut()}
+                          className="text-dark hover:text-primary dark:text-white dark:hover:text-primary"
+                        >
+                          Se Déconnecter
+                        </button>
+                        <button
+                        className="text-dark hover:text-primary dark:text-white dark:hover:text-primary"
+                      >
+                        <Link
+                        href="/admin/tables">
+                        Admin
+                        </Link>
+                      </button>
+                        </>
+                      ) : (
+                        <Link
+                          href="/login"
+                          className="text-dark hover:text-primary dark:text-white dark:hover:text-primary"
+                        >
+                          Se Connecter
+                        </Link>
+                      )}
+                    </li>
+                    {/* this */}
+                    
                   </ul>
                 </nav>
               </div>
