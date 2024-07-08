@@ -88,7 +88,7 @@ const Footer = () => {
            <div className="w-full px-4 md:w-2/3 lg:w-6/12 xl:w-3/12">
             <div className="mb-10 w-full">
               <h4 className="mb-9 text-lg font-semibold text-white">
-               <Link href="/Contact" >Contact</Link>
+               <Link href="/contact" >Contact</Link>
               </h4>
               
             </div>
