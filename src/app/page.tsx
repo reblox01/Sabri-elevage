@@ -19,7 +19,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Sabri Élevage | Achat de Poulets Vivants",
   description: "Découvrez Sabri Élevage, spécialiste en élevage de poulets vivants de qualité. Nous sommes fiers de notre engagement envers le bien-être animal et la durabilité. Contactez-nous dès aujourd'hui pour en savoir plus!",
-  keywords: "Sabri Élevage, poulets vivants, élevage de poulets, bien-être animal, qualité, durabilité, agriculture",
+  keywords: "Sabri Élevage, poulets vivants, élevage de poulets, bien-être animal, qualité, durabilité, agriculture, Sabri, Dinde, Dindes, Sell Dinde, Elevage, Sabri Elevage",
   robots: "index, follow",
 };
 
@@ -41,7 +41,7 @@ export default function Home() {
       
       {/* <HomeBlogSection posts={posts} /> */}
       <Contact />
-      <Clients />
+      {/* <Clients /> */}
     </main>
   );
 }
