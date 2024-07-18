@@ -17,13 +17,13 @@ const WhyUs = () => {
                 </h2>
                 <p className="mb-10 text-base leading-relaxed text-body-color dark:text-dark-6">
                   Nous veillons au bien-être animal en élevant nos dindes dans des conditions optimales, 
-                  avec une alimentation équilibrée et des soins vétérinaires réguliers. 
+                  avec une alimentation équilibrée et des soins vétérinaires réguliers.
                   <br /> <br />
-                  La qualité est notre priorité, garantissant des volailles robustes et 
-                  en bonne santé grâce à une attention constante. Nous adoptons des pratiques 
-                  agricoles durables pour minimiser notre impact sur l'environnement et 
-                  favoriser la biodiversité. Enfin, nous assurons une traçabilité complète 
-                  de nos dindes, de l'élevage à la vente, offrant ainsi transparence et confiance à nos clients.
+                  La qualité est notre priorité, garantissant des volailles robustes et en bonne 
+                  santé grâce à une attention constante. Nous adoptons des pratiques agricoles durables 
+                  pour minimiser notre impact sur l'environnement et favoriser la biodiversité. 
+                  Enfin, nous assurons une traçabilité complète de nos dindes, de l'élevage à la vente, 
+                  offrant ainsi transparence et confiance à nos clients.
                 </p>
               </div>
             </div>

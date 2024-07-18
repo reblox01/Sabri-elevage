@@ -18,7 +18,7 @@ const responsesData: Response[] = [
       <AnimalIcon />
     ),
     title: "Bien-être animal",
-    paragraph: "Nous veillons à ce que nos dindes soient élevés dans des conditions optimales, avec un accès à des espaces extérieurs, une alimentation équilibrée, et des soins vétérinaires réguliers. Nous croyons fermement que le bien-être de nos volailles est primordial pour assurer leur santé et leur robustesse.",
+    paragraph: "Nous veillons à ce que nos dindes soient élevées dans des conditions optimales, avec un accès à des espaces extérieurs, une alimentation équilibrée, et des soins vétérinaires réguliers. Nous croyons fermement que le bien-être de nos volailles est primordial pour assurer leur santé et leur robustesse.",
     btn: "Learn More",
     btnLink: "/#",
   },
@@ -38,7 +38,7 @@ const responsesData: Response[] = [
       <TraceabilityIcon /> 
     ),
     title: "Traçabilité",
-    paragraph: "Nous assurons une traçabilité complète de nos poulets, de l'élevage à la vente, offrant ainsi transparence et confiance à nos clients. Chaque étape du processus est rigoureusement contrôlée pour garantir la qualité et la sécurité de nos produits.",
+    paragraph: "Nous assurons une traçabilité complète de nos dindes, de l'élevage à la vente, offrant ainsi transparence et confiance à nos clients. Chaque étape du processus est rigoureusement contrôlée pour garantir la qualité et la sécurité de nos produits.",
     btn: "Learn More",
     btnLink: "/#",
   },
