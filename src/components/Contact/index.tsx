@@ -75,6 +75,9 @@ const Contact = () => {
                 <h2 className=" text-[35px] font-semibold leading-[1.14] text-dark dark:text-white">
                 Parlons de votre problème.
                 </h2>
+                <p className="mb-10 text-base leading-relaxed text-body-color dark:text-dark-6">
+                  Nous sommes à votre disposition pour répondre à toutes <br /> vos questions et vous accompagner dans vos projets.
+                </p>
               </div>
               <div className="mb-12 flex flex-wrap justify-between lg:mb-0">
               <div className="mb-8 flex w-full max-w-[100px]">
