@@ -18,13 +18,12 @@ const Hero = () => {
                 data-wow-delay=".2s"
               >
                 <h1 className="mb-6 text-3xl font-bold leading-snug text-white sm:text-4xl sm:leading-snug lg:text-5xl lg:leading-[1.2]">
-                Sabri Élevage est votre partenaire de confiance pour l'achat de poulets vivants
+                Sabri Élevage est votre partenaire de confiance pour l'achat de dinde vivante
                 </h1>
                 <p className="mx-auto mb-9 max-w-[600px] text-base font-medium text-white sm:text-lg sm:leading-[1.44]">
-                  Nous sommes fiers de notre engagement envers la qualité,
-                  le bien-être animal et la durabilité.
-                  Contactez-nous dès aujourd'hui pour découvrir comment nous 
-                  pouvons répondre à vos besoins en volaille vivante et contribuer à votre succès.
+                Nous sommes fiers de notre engagement envers la qualité, 
+                le bien-être animal et la durabilité. Contactez-nous dès aujourd'hui pour découvrir comment nous pouvons 
+                répondre à vos besoins en dinde vivante et contribuer à votre succès.
                 </p>                
               </div>
             </div>

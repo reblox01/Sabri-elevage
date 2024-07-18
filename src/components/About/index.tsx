@@ -13,12 +13,13 @@ const About = () => {
             <div className="w-full px-4 lg:w-1/2">
               <div className="mb-12 max-w-[540px] lg:mb-0">
                 <h2 className="mb-5 text-3xl font-bold leading-tight text-dark dark:text-white sm:text-[40px] sm:leading-[1.2]">
-                Sabri Élevage est une entreprise dédiée à l'élevage et à la vente de poulets vivants.
+                Sabri Élevage est une entreprise dédiée à l'élevage et à la vente de dinde vivants.
                 </h2>
                 <p className="mb-10 text-base leading-relaxed text-body-color dark:text-dark-6">
                 Depuis notre fondation en [année]
                   <br /> <br />
-                  nous nous sommes imposés comme un leader dans le domaine de l'aviculture, offrant des poulets de haute qualité, élevés dans des conditions optimales pour garantir leur santé et leur bien-être.
+                  Nous nous sommes imposés comme un leader dans le domaine de l'aviculture, offrant des dindes de haute qualité,
+                   élevées dans des conditions optimales pour garantir leur santé et leur bien-être.
                 </p>
 
                 

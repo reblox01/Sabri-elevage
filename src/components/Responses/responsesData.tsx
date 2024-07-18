@@ -8,7 +8,7 @@ const responsesData: Response[] = [
       <QualityIcon />
     ),
     title: "Qualité",
-    paragraph: "Nos poulets sont élevés avec soin et attention, garantissant ainsi des volailles robustes et en bonne santé pour nos clients. Nous mettons un point d'honneur à maintenir des standards élevés de qualité à chaque étape de l'élevage, pour offrir des produits irréprochables.",
+    paragraph: "Nos dindes sont élevées avec soin et attention, garantissant ainsi des dindes robustes et en bonne santé pour nos clients. Nous mettons un point d'honneur à maintenir des standards élevés de qualité à chaque étape de l'élevage, pour offrir des produits irréprochables.",
     btn: "Learn More",
     btnLink: "/#",
   },
@@ -18,7 +18,7 @@ const responsesData: Response[] = [
       <AnimalIcon />
     ),
     title: "Bien-être animal",
-    paragraph: "Nous veillons à ce que nos poulets soient élevés dans des conditions optimales, avec un accès à des espaces extérieurs, une alimentation équilibrée, et des soins vétérinaires réguliers. Nous croyons fermement que le bien-être de nos volailles est primordial pour assurer leur santé et leur robustesse.",
+    paragraph: "Nous veillons à ce que nos dindes soient élevés dans des conditions optimales, avec un accès à des espaces extérieurs, une alimentation équilibrée, et des soins vétérinaires réguliers. Nous croyons fermement que le bien-être de nos volailles est primordial pour assurer leur santé et leur robustesse.",
     btn: "Learn More",
     btnLink: "/#",
   },
