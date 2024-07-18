@@ -1,5 +1,5 @@
 import About from "@/components/About";
-import Clients from "@/components/Clients";
+// import Clients from "@/components/Clients";
 import ScrollUp from "@/components/Common/ScrollUp";
 import Contact from "@/components/Contact";
 import Hero from "@/components/Hero";
