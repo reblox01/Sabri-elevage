@@ -25,7 +25,7 @@ const Footer = () => {
                 />
               </Link>
               <p className="mb-8 max-w-[270px] text-base text-gray-7">
-                Votre partenaire de confiance pour l'achat de poulets vivants.
+                Votre partenaire de confiance pour l'achat de dindes vivants.
                 Engagés envers la qualité, le bien-être animal et la durabilité.
               </p>
               {/* <div className="-mx-3 flex items-center">
