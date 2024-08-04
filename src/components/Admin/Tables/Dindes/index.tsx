@@ -8,8 +8,8 @@ export default async function IndexPage({
 }: {
   searchParams: { q: string; offset: string };
 }) {
-  const search = searchParams.q ?? '';
-  const offset = searchParams.offset ?? 0;
+  // const search = searchParams.q ?? '';
+  // const offset = searchParams.offset ?? 0;
   // const { users, newOffset } = await getUsers(search, Number(offset));
 
   let dinde = {
@@ -36,7 +36,7 @@ export default async function IndexPage({
         </Button>
         <Button variant="alternative">
           <SettingsIcon className="h-5 w-5 mr-1" />
-                <Link href="https://astradev.budibase.app/app/dinde" target='_blank'>Admin</Link>
+                <Link href="https://airtable.com/app0iPVtu3qtXyr7a/pag39PcYhbOzwD7tw" target='_blank'>Admin</Link>
         </Button>
       </div>
       <iframe className="airtable-embed" src="https://airtable.com/embed/app0iPVtu3qtXyr7a/shrSqrPC7YNyF8Duc?viewControls=on" frameBorder="0" width="100%" height="533" style={dinde}></iframe>

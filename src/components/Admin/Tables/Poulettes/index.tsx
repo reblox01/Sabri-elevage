@@ -8,8 +8,8 @@ export default async function IndexPage({
 }: {
   searchParams: { q: string; offset: string };
 }) {
-  const search = searchParams.q ?? '';
-  const offset = searchParams.offset ?? 0;
+  // const search = searchParams.q ?? '';
+  // const offset = searchParams.offset ?? 0;
   // const { users, newOffset } = await getUsers(search, Number(offset));
 
   let dinde = {
