@@ -39,6 +39,7 @@ export default async function IndexPage({
                 <Link href="https://airtable.com/app0iPVtu3qtXyr7a/pag39PcYhbOzwD7tw" target='_blank'>Admin</Link>
         </Button>
       </div>
+      <li className="font-bold text-lg md:text-2xl mb-3 ml-5">Vente Globale</li>
       <iframe className="airtable-embed" src="https://airtable.com/embed/app0iPVtu3qtXyr7a/shrSqrPC7YNyF8Duc?viewControls=on" frameBorder="0" width="100%" height="533" style={dinde}></iframe>
     </main>
   );

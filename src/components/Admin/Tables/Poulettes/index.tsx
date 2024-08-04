@@ -22,7 +22,12 @@ export default async function IndexPage({
   return (
     <main className="flex flex-1 flex-col p-4 md:p-20 mt-20">
       <div className="flex items-center mb-8">
-        <h1 className="font-semibold text-lg md:text-2xl">La Table des Poules | <span className="text-2xl underline underline-offset-4 hover:font-bold decoration-wavy decoration-sky-500">Mostafa PC</span></h1>
+        <h1 className="font-semibold text-lg md:text-2xl">
+          La Table des Poules | 
+          <span className="text-2xl underline underline-offset-4 hover:font-bold decoration-wavy decoration-sky-500">
+            Mostafa PC
+          </span>
+        </h1>
       </div>
       <div className='flex items-center mb-10'>
       <Button variant="alternative">
@@ -39,7 +44,23 @@ export default async function IndexPage({
                 <Link href="https://airtable.com/appJvZpbixGGfkieH/pagx7FGtrcTI3pokQ" target='_blank'>Admin</Link>
         </Button>
       </div>
+      <li className="font-bold text-lg md:text-2xl mb-3 ml-5">Aliment 1</li>
       <iframe className="airtable-embed" src="https://airtable.com/embed/appJvZpbixGGfkieH/shrLvopuHdTc0kOmb?viewControls=on" frameBorder="0" width="100%" height="533" style={dinde}></iframe>
+
+      <li className="font-bold text-lg md:text-2xl mb-3 ml-5 mt-5">Aliment 2 SA</li>
+      <iframe className="airtable-embed" src="https://airtable.com/embed/appJvZpbixGGfkieH/shrcl3OIngfFViHv4?viewControls=on" frameBorder="0" width="100%" height="533" style={dinde}></iframe>
+
+      <li className="font-bold text-lg md:text-2xl mb-3 ml-5 mt-5">Aliment SO</li>
+      <iframe className="airtable-embed" src="https://airtable.com/embed/appJvZpbixGGfkieH/shr9dnJjIAn6EDn5I?viewControls=on" frameBorder="0" width="100%" height="533" style={dinde}></iframe>
+
+      <li className="font-bold text-lg md:text-2xl mb-3 ml-5 mt-5">Vente PC</li>
+      <iframe className="airtable-embed" src="https://airtable.com/embed/appJvZpbixGGfkieH/shrzd3EqAPrKlwAJ5?viewControls=on" frameBorder="0" width="100%" height="533" style={dinde}></iframe>
+
+      <li className="font-bold text-lg md:text-2xl mb-3 ml-5 mt-5">Poussins</li>
+      <iframe className="airtable-embed" src="https://airtable.com/embed/appJvZpbixGGfkieH/shr0wqMsxfg7Thaed?viewControls=on" frameBorder="0" width="100%" height="533" style={dinde}></iframe>
+
+      <li className="font-bold text-lg md:text-2xl mb-3 ml-5 mt-5">Reglement</li>
+      <iframe className="airtable-embed" src="https://airtable.com/embed/appJvZpbixGGfkieH/shrIeJjS1Vaci3NK5?viewControls=on" frameBorder="0" width="100%" height="533" style={dinde}></iframe>
     </main>
   );
 }
