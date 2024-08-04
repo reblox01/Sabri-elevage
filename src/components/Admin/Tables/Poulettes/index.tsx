@@ -36,7 +36,7 @@ export default async function IndexPage({
         </Button>
         <Button variant="alternative">
           <SettingsIcon className="h-5 w-5 mr-1" />
-                <Link href="https://astradev.budibase.app/app/mostafa-pc" target='_blank'>Admin</Link>
+                <Link href="https://airtable.com/appJvZpbixGGfkieH/pagx7FGtrcTI3pokQ" target='_blank'>Admin</Link>
         </Button>
       </div>
       <iframe className="airtable-embed" src="https://airtable.com/embed/appJvZpbixGGfkieH/shrLvopuHdTc0kOmb?viewControls=on" frameBorder="0" width="100%" height="533" style={dinde}></iframe>
