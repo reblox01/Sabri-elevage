@@ -16,6 +16,7 @@ export default async function IndexPage({
     border: '1px solid rgb(226, 232, 240)',
     borderRadius: '6px',
     marginTop: '10px',
+    background: 'transparent',
   }
 
   return (
@@ -38,7 +39,7 @@ export default async function IndexPage({
                 <Link href="https://astradev.budibase.app/app/mostafa-pc" target='_blank'>Admin</Link>
         </Button>
       </div>
-      <iframe width="100%" height="700" frameBorder="0" style={dinde} allow="clipboard-write;camera;geolocation;fullscreen" src="https://astradev.budibase.app/embed/mostafa-pc"></iframe>
+      <iframe className="airtable-embed" src="https://airtable.com/embed/appJvZpbixGGfkieH/shrLvopuHdTc0kOmb?viewControls=on" frameBorder="0" width="100%" height="533" style={dinde}></iframe>
     </main>
   );
 }
