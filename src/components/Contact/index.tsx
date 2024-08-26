@@ -84,19 +84,19 @@ const Contact = () => {
                 <div className="flex justify-between space-x-4 lg:space-x-8">
                   {/* Location */}
                   <div className="flex items-center">
-                    <div className="flex h-[60px] w-[60px] items-center justify-center overflow-hidden rounded bg-primary/5 text-primary sm:h-[70px] sm:w-[70px]">
+                    <div className="mr-2 flex h-[60px] w-[60px] items-center justify-center overflow-hidden rounded bg-primary/5 text-primary sm:h-[70px] sm:w-[70px]">
                       <Link href="#">
                         <LocationIcon />
                       </Link>
                     </div>
-                    <span className="text-base text-dark dark:text-white hidden lg:block">
-                      401 Broadway, 24th Floor, Orchard Cloud View, Maroc
+                    <span className="max-w-40 text-base text-dark dark:text-white hidden lg:block">
+                      401 Broadway, 24th Floor, Maroc
                     </span>
                   </div>
 
                   {/* Phone */}
                   <div className="flex items-center">
-                    <div className="flex h-[60px] w-[60px] items-center justify-center overflow-hidden rounded bg-primary/5 text-primary sm:h-[70px] sm:w-[70px]">
+                    <div className="mr-2 flex h-[60px] w-[60px] items-center justify-center overflow-hidden rounded bg-primary/5 text-primary sm:h-[70px] sm:w-[70px]">
                       <Link href="tel:+212600663181">
                         <PhoneIcon />
                       </Link>
@@ -108,7 +108,7 @@ const Contact = () => {
 
                   {/* Email */}
                   <div className="flex items-center">
-                    <div className="flex h-[60px] w-[60px] items-center justify-center overflow-hidden rounded bg-primary/5 text-primary sm:h-[70px] sm:w-[70px]">
+                    <div className="mr-2 flex h-[60px] w-[60px] items-center justify-center overflow-hidden rounded bg-primary/5 text-primary sm:h-[70px] sm:w-[70px]">
                       <Link href="mailto:sabrielevage@gmail.com">
                         <EmailIcon />
                       </Link>
