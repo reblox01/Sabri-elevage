@@ -67,45 +67,60 @@ const Contact = () => {
       <div className="container px-4">
         <div className="-mx-4 flex flex-wrap items-center">
           <div className="w-full px-4 lg:w-7/12 xl:w-8/12">
-          <div className="ud-contact-content-wrapper">
+            <div className="ud-contact-content-wrapper">
               <div className="ud-contact-title mb-12 lg:mb-[150px]">
                 <span className="mb-6 block text-base font-medium text-dark dark:text-white">
-                CONTACTEZ-NOUS
+                  CONTACTEZ-NOUS
                 </span>
-                <h2 className=" text-[35px] font-semibold leading-[1.14] text-dark dark:text-white">
-                Parlons de votre problème.
+                <h2 className="text-[35px] font-semibold leading-[1.14] text-dark dark:text-white">
+                  Parlons de votre problème.
                 </h2>
                 <p className="mb-10 text-base leading-relaxed text-body-color dark:text-dark-6">
                   Nous sommes à votre disposition pour répondre à toutes <br /> vos questions et vous accompagner dans vos projets.
                 </p>
               </div>
-              <div className="mb-12 flex flex-wrap justify-between lg:mb-0">
-              <div className="mb-8 flex w-full max-w-[100px]">
-                  <div className="mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-primary/5 text-primary sm:h-[70px] sm:max-w-[70px]">
-                    <Link href="#">
-                      <LocationIcon />
-                    </Link>
+              <div className="mb-12 flex flex-col lg:flex-row lg:space-x-8 lg:mb-0">
+                {/* Wrapper for the icons and text */}
+                <div className="flex justify-between space-x-4 lg:space-x-8">
+                  {/* Location */}
+                  <div className="flex items-center">
+                    <div className="flex h-[60px] w-[60px] items-center justify-center overflow-hidden rounded bg-primary/5 text-primary sm:h-[70px] sm:w-[70px]">
+                      <Link href="#">
+                        <LocationIcon />
+                      </Link>
+                    </div>
+                    <span className="text-base text-dark dark:text-white hidden lg:block">
+                      401 Broadway, 24th Floor, Orchard Cloud View, Maroc
+                    </span>
                   </div>
-                </div>
 
-                <div className="mb-8 flex w-full max-w-[100px]">
-                  <div className="mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-primary/5 text-primary sm:h-[70px] sm:max-w-[70px]">
-                    <Link href="tel:+212600663181">
-                      <PhoneIcon />
-                    </Link>
+                  {/* Phone */}
+                  <div className="flex items-center">
+                    <div className="flex h-[60px] w-[60px] items-center justify-center overflow-hidden rounded bg-primary/5 text-primary sm:h-[70px] sm:w-[70px]">
+                      <Link href="tel:+212600663181">
+                        <PhoneIcon />
+                      </Link>
+                    </div>
+                    <span className="text-base text-dark dark:text-white hidden lg:block">
+                      +212 600-663-181
+                    </span>
                   </div>
-                </div>
 
-                <div className="mb-8 flex w-full max-w-[100px]">
-                  <div className="mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-primary/5 text-primary sm:h-[70px] sm:max-w-[70px]">
-                    <Link href="mailto:sabrielevage@gmail.com">
-                      <EmailIcon />
-                    </Link>
+                  {/* Email */}
+                  <div className="flex items-center">
+                    <div className="flex h-[60px] w-[60px] items-center justify-center overflow-hidden rounded bg-primary/5 text-primary sm:h-[70px] sm:w-[70px]">
+                      <Link href="mailto:sabrielevage@gmail.com">
+                        <EmailIcon />
+                      </Link>
+                    </div>
+                    <span className="text-base text-dark dark:text-white hidden lg:block">
+                      sabrielevage@gmail.com
+                    </span>
                   </div>
                 </div>
               </div>
             </div>
-              </div>
+          </div>
           <div className="w-full px-4 lg:w-5/12 xl:w-4/12">
             <motion.div
               initial={{ opacity: 0 }}
@@ -173,50 +188,21 @@ const Contact = () => {
                     required
                   ></textarea>
                 </div>
-                <div className="mb-0">
-                  {formStatus === 'sending' && (
-                    <motion.button
-                      type="submit"
-                      whileTap={{ scale: 0.95 }}
-                      disabled
-                      className="inline-flex items-center justify-center rounded-md bg-primary px-10 py-3 text-base font-medium text-white opacity-50 cursor-not-allowed"
-                    >
-                      Envoi en cours...
-                    </motion.button>
+                <div className="flex flex-wrap items-center justify-between">
+                  <button
+                    type="submit"
+                    className="inline-flex h-14 items-center justify-center rounded-full bg-primary px-6 text-base font-medium text-white transition hover:bg-opacity-90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:ring-offset-dark-1"
+                  >
+                    {formStatus === 'sending' ? 'Envoi en cours...' : 'Envoyer Message'}
+                  </button>
+                  {formStatus === 'success' && (
+                    <p className="mt-4 text-sm text-green-500">Message envoyé avec succès!</p>
                   )}
-                  {formStatus !== 'sending' && (
-                    <motion.button
-                      type="submit"
-                      whileTap={{ scale: 0.95 }}
-                      className="inline-flex items-center justify-center rounded-md bg-primary px-10 py-3 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-primary/90"
-                    >
-                      Envoyer
-                    </motion.button>
+                  {formStatus === 'error' && (
+                    <p className="mt-4 text-sm text-red-500">Échec de l'envoi. Veuillez réessayer.</p>
                   )}
                 </div>
               </form>
-              {formStatus === 'success' && (
-                <motion.div
-                  initial={{ opacity: 0, height: 0 }}
-                  animate={{ opacity: 1, height: 'auto' }}
-                  exit={{ opacity: 0, height: 0 }}
-                  transition={{ duration: 0.5 }}
-                  className="mt-4 text-green-600"
-                >
-                  Votre message a été envoyé avec succès!
-                </motion.div>
-              )}
-              {formStatus === 'error' && (
-                <motion.div
-                  initial={{ opacity: 0, height: 0 }}
-                  animate={{ opacity: 1, height: 'auto' }}
-                  exit={{ opacity: 0, height: 0 }}
-                  transition={{ duration: 0.5 }}
-                  className="mt-4 text-red-600"
-                >
-                  Une erreur s'est produite. Veuillez réessayer.
-                </motion.div>
-              )}
             </motion.div>
           </div>
         </div>
