@@ -40,12 +40,6 @@ export default function Poussins() {
         <Button variant="alternative" className="flex items-center" onClick={() => router.push('/admin/tables/poulettes')}>
           Aliment 1
         </Button>
-        <Button variant="alternative" className="flex items-center" onClick={() => router.push('/admin/tables/poulettes/aliment-2-sa')}>
-          Aliment 2 SA
-        </Button>
-        <Button variant="alternative" className="flex items-center" onClick={() => router.push('/admin/tables/poulettes/aliment-so')}>
-          Aliment SO
-        </Button>
         <Button variant="alternative" className="flex items-center" onClick={() => router.push('/admin/tables/poulettes/vente-pc')}>
           Vente PC
         </Button>

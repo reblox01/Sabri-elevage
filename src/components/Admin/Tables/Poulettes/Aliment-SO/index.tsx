@@ -36,15 +36,9 @@ export default function AlimentSO() {
         </Button>
       </div>
       <hr />
-      <div className='flex flex-wrap items-center gap-2 mb-10 mt-4'>
+      <div className='flex flex-wrap items-center gap-2 mb-2 mt-4'>
         <Button variant="alternative" className="flex items-center" onClick={() => router.push('/admin/tables/poulettes')}>
           Aliment 1
-        </Button>
-        <Button variant="alternative" className="flex items-center" onClick={() => router.push('/admin/tables/poulettes/aliment-2-sa')}>
-          Aliment 2 SA
-        </Button>
-        <Button variant="alternative" className="flex items-center" onClick={() => router.push('/admin/tables/poulettes/aliment-so')}>
-          Aliment SO
         </Button>
         <Button variant="alternative" className="flex items-center" onClick={() => router.push('/admin/tables/poulettes/vente-pc')}>
           Vente PC
@@ -56,8 +50,22 @@ export default function AlimentSO() {
           Reglement
         </Button>
       </div>
-      <li className="font-bold text-lg md:text-2xl mb-3 ml-5 mt-5">Aliment SO</li>
-      <iframe className="airtable-embed" src="https://airtable.com/embed/appJvZpbixGGfkieH/shr9dnJjIAn6EDn5I?viewControls=on" frameBorder="0" width="100%" height="533" style={dinde}></iframe>
+      <hr />
+      <div className='flex flex-wrap items-center gap-2 mb-10 mt-4'>
+        <Button variant="alternative" className="flex items-center gap-1" onClick={() => router.push('/admin/tables/poulettes')}>
+          <BackIcon className="h-5 w-5" />
+        </Button>
+        <Button variant="alternative" className="flex items-center" onClick={() => router.push('/admin/tables/poulettes/aliment-2-sa')}>
+          Aliment 2 SA
+        </Button>
+        <Button variant="alternative" className="flex items-center" onClick={() => router.push('/admin/tables/poulettes/aliment-so')}>
+          Aliment SO
+        </Button>
+      </div>
+      <li className="font-bold text-lg md:text-2xl mb-3 ml-5 mt-5">Aliment Sofalim - Achat</li>
+      <iframe className="airtable-embed" src="https://airtable.com/embed/appJvZpbixGGfkieH/shraQXqFwEKP3QPHq?viewControls=on" frameBorder="0" width="100%" height="533" style={dinde}></iframe>
+      <li className="font-bold text-lg md:text-2xl mb-3 ml-5 mt-10">Aliment Sofalim - Vente</li>
+      <iframe className="airtable-embed" src="https://airtable.com/embed/appJvZpbixGGfkieH/shr11zOacFg1DweKv?viewControls=on" frameBorder="0" width="100%" height="533" style={dinde}></iframe>
     </main>
   );
 }
