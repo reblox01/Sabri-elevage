@@ -1,5 +1,3 @@
-'use client';
-
 import { BackIcon, DindeIcon, SettingsIcon } from '@/components/icons';
 import { Button } from '@/components/ui/button';
 import { useRouter } from 'next/navigation';
@@ -37,10 +35,10 @@ export default function IndexPage() {
       </div>
       <hr />
       <div className='flex flex-wrap items-center gap-2 mb-10 mt-4'>
-        <Button variant="alternative" className="flex items-center" onClick={() => router.push('/admin/tables/poulettes')}>
+        <Button variant="alternative" className="flex items-center" onClick={() => router.push('/admin/tables/poulettes/Aliment-1')}>
           Aliment 1
         </Button>
-        <Button variant="alternative" className="flex items-center" onClick={() => router.push('/admin/tables/Aliment')}>
+        <Button variant="alternative" className="flex items-center" onClick={() => router.push('/admin/tables/poulettes/Aliment-2-SA')}>
           Aliment 2 SA
         </Button>
         <Button variant="alternative" className="flex items-center" onClick={() => router.push('/admin/tables/poulettes/Aliment-SO')}>
@@ -56,8 +54,8 @@ export default function IndexPage() {
           Reglement
         </Button>
       </div>
-      <li className="font-bold text-lg md:text-2xl mb-3 ml-5">Aliment 1</li>
-      <iframe className="airtable-embed" src="https://airtable.com/embed/appJvZpbixGGfkieH/shrLvopuHdTc0kOmb?viewControls=on" frameBorder="0" width="100%" height="533" style={dinde}></iframe>
+      <li className="font-bold text-lg md:text-2xl mb-3 ml-5 mt-5">Aliment 2 SA</li>
+      <iframe className="airtable-embed" src="https://airtable.com/embed/appJvZpbixGGfkieH/shrcl3OIngfFViHv4?viewControls=on" frameBorder="0" width="100%" height="533" style={dinde}></iframe>
     </main>
   );
 }
