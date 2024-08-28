@@ -1,20 +1,20 @@
 // import Breadcrumb from "@/components/Common/Breadcrumb";
-import Poulettes from "@/components/Admin/Tables/Poulettes";
+import Reglement from "@/components/Admin/Tables/Poulettes/Reglement";
 // import Team from "@/components/Team";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title:
     "Mostafa PC | Sabri Élevage",
-  description: "This is Pourquoi Nous page description",
+  description: "This is Mostapha PC Tableau Aliment SO",
 };
 
-const PoulettesPage = () => {
+const ReglementPage = () => {
   return (
     <main>
-      <Poulettes />
+      <Reglement />
     </main>
   );
 };
 
-export default PoulettesPage;
+export default ReglementPage;

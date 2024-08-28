@@ -1,12 +1,11 @@
+"use client";
+
 import { BackIcon, DindeIcon, SettingsIcon } from '@/components/icons';
 import { Button } from '@/components/ui/button';
-import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 
-export default async function Poussins({
-  searchParams
-}: {
-  searchParams: { q: string; offset: string };
-}) {
+export default function Poussins() {
+  const router = useRouter();
 
   let dinde = {
     border: '1px solid rgb(226, 232, 240)',
@@ -24,39 +23,37 @@ export default async function Poussins({
         </h1>
       </div>
       <div className='flex flex-wrap items-center gap-2 mb-2'>
-        <Button variant="alternative" className="flex items-center gap-1">
-          <Link href="/admin/tables">
-            <BackIcon className="h-5 w-5" />
-          </Link>
+        <Button variant="alternative" className="flex items-center gap-1" onClick={() => router.push('/admin/tables')}>
+          <BackIcon className="h-5 w-5" />
         </Button>
-        <Button variant="alternative" className="flex items-center gap-1">
+        <Button variant="alternative" className="flex items-center gap-1" onClick={() => router.push('/admin/tables/dindes')}>
           <DindeIcon className="h-5 w-5" />
-          <Link href="/admin/tables/dindes">Dinde</Link>
+          Dinde
         </Button>
-        <Button variant="alternative" className="flex items-center gap-1">
+        <Button variant="alternative" className="flex items-center gap-1" onClick={() => window.open('https://airtable.com/appJvZpbixGGfkieH/pagx7FGtrcTI3pokQ', '_blank')}>
           <SettingsIcon className="h-5 w-5" />
-          <Link href="https://airtable.com/appJvZpbixGGfkieH/pagx7FGtrcTI3pokQ" target='_blank'>Admin</Link>
+          Admin
         </Button>
       </div>
       <hr />
       <div className='flex flex-wrap items-center gap-2 mb-10 mt-4'>
-        <Button variant="alternative" className="flex items-center">
-          <Link href="/admin/tables/poulettes/Aliment-1">Aliment 1</Link>
+        <Button variant="alternative" className="flex items-center" onClick={() => router.push('/admin/tables/poulettes')}>
+          Aliment 1
         </Button>
-        <Button variant="alternative" className="flex items-center">
-          <Link href="/admin/tables/poulettes/Aliment-2-SA">Aliment 2 SA</Link>
+        <Button variant="alternative" className="flex items-center" onClick={() => router.push('/admin/tables/poulettes/aliment-2-sa')}>
+          Aliment 2 SA
         </Button>
-        <Button variant="alternative" className="flex items-center">
-          <Link href="/admin/tables/poulettes/Aliment-SO">Aliment SO</Link>
+        <Button variant="alternative" className="flex items-center" onClick={() => router.push('/admin/tables/poulettes/aliment-so')}>
+          Aliment SO
         </Button>
-        <Button variant="alternative" className="flex items-center">
-          <Link href="/admin/tables/poulettes/Vente-PC">Vente PC</Link>
+        <Button variant="alternative" className="flex items-center" onClick={() => router.push('/admin/tables/poulettes/vente-pc')}>
+          Vente PC
         </Button>
-        <Button variant="alternative" className="flex items-center">
-          <Link href="/admin/tables/poulettes/Poussins">Poussins</Link>
+        <Button variant="alternative" className="flex items-center" onClick={() => router.push('/admin/tables/poulettes/poussins')}>
+          Poussins
         </Button>
-        <Button variant="alternative" className="flex items-center">
-          <Link href="/admin/tables/poulettes/Reglement">Reglement</Link>
+        <Button variant="alternative" className="flex items-center" onClick={() => router.push('/admin/tables/poulettes/reglement')}>
+          Reglement
         </Button>
       </div>
       <li className="font-bold text-lg md:text-2xl mb-3 ml-5 mt-5">Poussins</li>

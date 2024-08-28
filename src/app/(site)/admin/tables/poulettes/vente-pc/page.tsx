@@ -1,20 +1,20 @@
 // import Breadcrumb from "@/components/Common/Breadcrumb";
-import Poulettes from "@/components/Admin/Tables/Poulettes";
+import VentePC from "@/components/Admin/Tables/Poulettes/Vente-PC";
 // import Team from "@/components/Team";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title:
     "Mostafa PC | Sabri Élevage",
-  description: "This is Pourquoi Nous page description",
+  description: "This is Mostapha PC Tableau Vente PC",
 };
 
-const PoulettesPage = () => {
+const VentePcPage = () => {
   return (
     <main>
-      <Poulettes />
+      <VentePC />
     </main>
   );
 };
 
-export default PoulettesPage;
+export default VentePcPage;

@@ -40,19 +40,19 @@ export default function IndexPage() {
         <Button variant="alternative" className="flex items-center" onClick={() => router.push('/admin/tables/poulettes')}>
           Aliment 1
         </Button>
-        <Button variant="alternative" className="flex items-center" onClick={() => router.push('/admin/tables/Aliment')}>
+        <Button variant="alternative" className="flex items-center" onClick={() => router.push('/admin/tables/poulettes/aliment-2-sa')}>
           Aliment 2 SA
         </Button>
-        <Button variant="alternative" className="flex items-center" onClick={() => router.push('/admin/tables/poulettes/Aliment-SO')}>
+        <Button variant="alternative" className="flex items-center" onClick={() => router.push('/admin/tables/poulettes/aliment-so')}>
           Aliment SO
         </Button>
-        <Button variant="alternative" className="flex items-center" onClick={() => router.push('/admin/tables/poulettes/Vente-PC')}>
+        <Button variant="alternative" className="flex items-center" onClick={() => router.push('/admin/tables/poulettes/vente-pc')}>
           Vente PC
         </Button>
-        <Button variant="alternative" className="flex items-center" onClick={() => router.push('/admin/tables/poulettes/Poussins')}>
+        <Button variant="alternative" className="flex items-center" onClick={() => router.push('/admin/tables/poulettes/poussins')}>
           Poussins
         </Button>
-        <Button variant="alternative" className="flex items-center" onClick={() => router.push('/admin/tables/poulettes/Reglement')}>
+        <Button variant="alternative" className="flex items-center" onClick={() => router.push('/admin/tables/poulettes/reglement')}>
           Reglement
         </Button>
       </div>
