@@ -30,7 +30,7 @@ export default function VentePC() {
           <DindeIcon className="h-5 w-5" />
           Dinde
         </Button>
-        <Button variant="alternative" className="flex items-center gap-1" onClick={() => window.open('https://airtable.com/appJvZpbixGGfkieH/pagx7FGtrcTI3pokQ', '_blank')}>
+        <Button variant="alternative" className="flex items-center gap-1" onClick={() => window.open('https://airtable.com/appJvZpbixGGfkieH/pagP00mD1dV6tPNBb', '_blank')}>
           <SettingsIcon className="h-5 w-5" />
           Admin
         </Button>
@@ -38,7 +38,7 @@ export default function VentePC() {
       <hr />
       <div className='flex flex-wrap items-center gap-2 mb-10 mt-4'>
         <Button variant="alternative" className="flex items-center" onClick={() => router.push('/admin/tables/poulettes')}>
-          Aliment 1
+        Aliment Sahil / Sofalim
         </Button>
         <Button variant="alternative" className="flex items-center" onClick={() => router.push('/admin/tables/poulettes/vente-pc')}>
           Vente PC

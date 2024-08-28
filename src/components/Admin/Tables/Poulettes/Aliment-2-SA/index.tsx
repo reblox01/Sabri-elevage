@@ -30,7 +30,7 @@ export default function Aliment2sa() {
           <DindeIcon className="h-5 w-5" />
           Dinde
         </Button>
-        <Button variant="alternative" className="flex items-center gap-1" onClick={() => window.open('https://airtable.com/appJvZpbixGGfkieH/pagx7FGtrcTI3pokQ', '_blank')}>
+        <Button variant="alternative" className="flex items-center gap-1" onClick={() => window.open('https://airtable.com/appJvZpbixGGfkieH/pagP00mD1dV6tPNBb', '_blank')}>
           <SettingsIcon className="h-5 w-5" />
           Admin
         </Button>
@@ -38,7 +38,7 @@ export default function Aliment2sa() {
       <hr />
       <div className='flex flex-wrap items-center gap-2 mb-2 mt-4'>
         <Button variant="alternative" className="flex items-center" onClick={() => router.push('/admin/tables/poulettes')}>
-          Aliment 1
+        Aliment Sahil / Sofalim
         </Button>
         <Button variant="alternative" className="flex items-center" onClick={() => router.push('/admin/tables/poulettes/vente-pc')}>
           Vente PC
@@ -56,10 +56,10 @@ export default function Aliment2sa() {
           <BackIcon className="h-5 w-5" />
         </Button>
         <Button variant="alternative" className="flex items-center" onClick={() => router.push('/admin/tables/poulettes/aliment-2-sa')}>
-          Aliment 2 SA
+          Aliment Sahil
         </Button>
         <Button variant="alternative" className="flex items-center" onClick={() => router.push('/admin/tables/poulettes/aliment-so')}>
-          Aliment SO
+          Aliment Sofalim
         </Button>
       </div>
       <li className="font-bold text-lg md:text-2xl mb-3 ml-5 mt-5">Aliment Sahil - Achat</li>
