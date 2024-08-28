@@ -58,7 +58,7 @@ export default function VentePC() {
       </div>
       <li className="font-bold text-lg md:text-2xl mb-3 ml-5 mt-5">Vente PC - Vente</li>
       <iframe className="airtable-embed" src="https://airtable.com/embed/appJvZpbixGGfkieH/shrXjgcwgPjvUAHx5?viewControls=on" frameBorder="0" width="100%" height="533" style={dinde}></iframe>
-      <li className="font-bold text-lg md:text-2xl mb-3 ml-5 mt-5">Vente PC - Achat</li>
+      <li className="font-bold text-lg md:text-2xl mb-3 ml-5 mt-10">Vente PC - Achat</li>
       <iframe className="airtable-embed" src="https://airtable.com/embed/appJvZpbixGGfkieH/shrzd3EqAPrKlwAJ5?viewControls=on" frameBorder="0" width="100%" height="533" style={dinde}></iframe>
     </main>
   );
