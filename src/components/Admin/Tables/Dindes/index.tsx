@@ -28,7 +28,7 @@ export default async function IndexPage({
         </Button>
         <Button variant="alternative" className="flex items-center gap-1">
           <PouletIcon className="h-5 w-5" />
-          <Link href="/admin/tables/poulettes">Poulettes - Mostafa PC</Link>
+          <Link href="/admin/tables/poulettes">Poulettes Chaire</Link>
         </Button>
         <Button variant="alternative" className="flex items-center gap-1">
           <SettingsIcon className="h-5 w-5" />
