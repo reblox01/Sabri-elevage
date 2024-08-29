@@ -37,7 +37,7 @@ export default function AjouterVente() {
       </div>
       <hr />
       <div className='flex flex-wrap items-center gap-2 mb-2 mt-4'>
-        <Button variant="alternative" className="flex items-center" onClick={() => router.push('/admin/tables/poulettes')}>
+        <Button variant="clicked" className="flex items-center" onClick={() => router.push('/admin/tables/poulettes')}>
         Aliment Sahil / Sofalim
         </Button>
         <Button variant="alternative" className="flex items-center" onClick={() => router.push('/admin/tables/poulettes/vente-pc')}>
