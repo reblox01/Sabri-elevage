@@ -6,6 +6,9 @@ export const config = {
         "/admin/tables/dindes",
         "/admin/tables/poulettes",
 
+        // Vente Glo DC
+        "/admin/tables/dindes/ajouter",
+
         // Aliment sahil
         "/admin/tables/poulettes/aliment-2-sa",
         "/admin/tables/poulettes/aliment-2-sa/ajouter-achat",

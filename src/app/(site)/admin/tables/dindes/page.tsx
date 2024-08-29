@@ -12,10 +12,7 @@ export const metadata: Metadata = {
 const DindesPage = () => {
   return (
     <main>
-      <Dindes searchParams={{
-        q: "",
-        offset: ""
-      }} />
+      <Dindes />
     </main>
   );
 };

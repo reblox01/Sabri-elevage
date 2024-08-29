@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 
-export default function IndexPage() {
+export default function AjouterAchat() {
   const router = useRouter();
 
   let dinde = {
@@ -30,21 +30,20 @@ export default function IndexPage() {
           <PouletIcon className="h-5 w-5" />
           <Link href="/admin/tables/poulettes">Poulettes Chaire</Link>
         </Button>
-        <Button variant="alternative" className="flex items-center gap-1">
+        <Button variant="alternative" className="flex items-center gap-1" onClick={() => window.open('https://airtable.com/app0iPVtu3qtXyr7a/pag39PcYhbOzwD7tw', '_blank')}>
           <SettingsIcon className="h-5 w-5" />
-          <Link href="https://airtable.com/app0iPVtu3qtXyr7a/pag39PcYhbOzwD7tw" target='_blank'>Admin</Link>
+          Admin
         </Button>
       </div>
-      <div className='flex flex-wrap items-center gap-2 mb-4 mt-4'>
-        <Button variant="selected" className="flex items-center" onClick={() => router.push('/admin/tables/dindes')}>
+      <div className='flex flex-wrap items-center gap-2 mt-4'>
+        <Button variant="alternative" className="flex items-center" onClick={() => router.push('/admin/tables/dindes')}>
           View
         </Button>
-        <Button variant="alternative" className="flex items-center" onClick={() => router.push('/admin/tables/dindes/ajouter')}>
+        <Button variant="selected" className="flex items-center" onClick={() => router.push('/admin/tables/dindes/ajouter')}>
           Ajouter
         </Button>
       </div>
-      <li className="font-bold text-lg md:text-2xl mb-3 ml-5">Vente Globale</li>
-      <iframe className="airtable-embed" src="https://airtable.com/embed/app0iPVtu3qtXyr7a/shrSqrPC7YNyF8Duc?viewControls=on" frameBorder="0" width="100%" height="533" style={dinde}></iframe>
+      <iframe className="airtable-embed" src="https://airtable.com/embed/app0iPVtu3qtXyr7a/pagCyn4PshdR83tFe/form" frameBorder="0" width="100%" height="1950"></iframe>
     </main>
   );
 }
