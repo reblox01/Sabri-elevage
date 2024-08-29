@@ -4,7 +4,7 @@ import { BackIcon, DindeIcon, SettingsIcon } from '@/components/icons';
 import { Button } from '@/components/ui/button';
 import { useRouter } from 'next/navigation';
 
-export default function Reglement() {
+export default function AjouterAchat() {
   const router = useRouter();
 
   let dinde = {
@@ -43,15 +43,22 @@ export default function Reglement() {
         <Button variant="alternative" className="flex items-center" onClick={() => router.push('/admin/tables/poulettes/vente-pc')}>
           Vente PC
         </Button>
-        <Button variant="alternative" className="flex items-center" onClick={() => router.push('/admin/tables/poulettes/poussins')}>
+        <Button variant="clicked" className="flex items-center" onClick={() => router.push('/admin/tables/poulettes/poussins')}>
           Poussins
         </Button>
-        <Button variant="clicked" className="flex items-center" onClick={() => router.push('/admin/tables/poulettes/reglement')}>
+        <Button variant="alternative" className="flex items-center" onClick={() => router.push('/admin/tables/poulettes/reglement')}>
           Reglement
         </Button>
       </div>
-      <li className="font-bold text-lg md:text-2xl mb-3 ml-5 mt-5">Reglement</li>
-      <iframe className="airtable-embed" src="https://airtable.com/embed/appJvZpbixGGfkieH/shrIeJjS1Vaci3NK5?viewControls=on" frameBorder="0" width="100%" height="533" style={dinde}></iframe>
+      <div className='flex flex-wrap items-center gap-2 mt-4'>
+        <Button variant="alternative" className="flex items-center" onClick={() => router.push('/admin/tables/poulettes/poussins')}>
+          View
+        </Button>
+        <Button variant="selected" className="flex items-center" onClick={() => router.push('/admin/tables/poulettes/poussins/ajouter')}>
+          Ajouter
+        </Button>
+      </div>
+      <iframe className="airtable-embed" src="https://airtable.com/embed/appJvZpbixGGfkieH/pagve3BMZQLsw0umW/form" frameBorder="0" width="100%" height="1533"></iframe>
     </main>
   );
 }

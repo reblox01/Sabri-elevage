@@ -43,15 +43,31 @@ export default function Poussins() {
         <Button variant="alternative" className="flex items-center" onClick={() => router.push('/admin/tables/poulettes/vente-pc')}>
           Vente PC
         </Button>
-        <Button variant="alternative" className="flex items-center" onClick={() => router.push('/admin/tables/poulettes/poussins')}>
+        <Button variant="clicked" className="flex items-center" onClick={() => router.push('/admin/tables/poulettes/poussins')}>
           Poussins
         </Button>
         <Button variant="alternative" className="flex items-center" onClick={() => router.push('/admin/tables/poulettes/reglement')}>
           Reglement
         </Button>
       </div>
+      <div className='flex flex-wrap items-center gap-2 mb-4 mt-4'>
+        <Button variant="selected" className="flex items-center" onClick={() => router.push('/admin/tables/poulettes/poussins')}>
+          View
+        </Button>
+        <Button variant="alternative" className="flex items-center" onClick={() => router.push('/admin/tables/poulettes/poussins/ajouter-achat')}>
+          Ajouter
+        </Button>
+      </div>
       <li className="font-bold text-lg md:text-2xl mb-3 ml-5 mt-5">Poussins - Achat</li>
       <iframe className="airtable-embed" src="https://airtable.com/embed/appJvZpbixGGfkieH/shr0wqMsxfg7Thaed?viewControls=on" frameBorder="0" width="100%" height="533" style={dinde}></iframe>
+      <div className='flex flex-wrap items-center gap-2 mb-4 mt-20'>
+        <Button variant="selected" className="flex items-center" onClick={() => router.push('/admin/tables/poulettes/poussins')}>
+          View
+        </Button>
+        <Button variant="alternative" className="flex items-center" onClick={() => router.push('/admin/tables/poulettes/poussins/ajouter-vente')}>
+          Ajouter
+        </Button>
+      </div>
       <li className="font-bold text-lg md:text-2xl mb-3 ml-5 mt-10">Poussins - Vente</li>
       <iframe className="airtable-embed" src="https://airtable.com/embed/appJvZpbixGGfkieH/shrn9zBbXO8KiLD9Z?viewControls=on" frameBorder="0" width="100%" height="533" style={dinde}></iframe>
     </main>

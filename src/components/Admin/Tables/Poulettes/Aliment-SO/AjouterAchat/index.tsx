@@ -4,7 +4,7 @@ import { BackIcon, DindeIcon, SettingsIcon } from '@/components/icons';
 import { Button } from '@/components/ui/button';
 import { useRouter } from 'next/navigation';
 
-export default function AlimentSO() {
+export default function AjouterAchat() {
   const router = useRouter();
 
   let dinde = {
@@ -37,7 +37,7 @@ export default function AlimentSO() {
       </div>
       <hr />
       <div className='flex flex-wrap items-center gap-2 mb-2 mt-4'>
-        <Button variant="clicked" className="flex items-center" onClick={() => router.push('/admin/tables/poulettes')}>
+        <Button variant="alternative" className="flex items-center" onClick={() => router.push('/admin/tables/poulettes')}>
         Aliment Sahil / Sofalim
         </Button>
         <Button variant="alternative" className="flex items-center" onClick={() => router.push('/admin/tables/poulettes/vente-pc')}>
@@ -62,27 +62,15 @@ export default function AlimentSO() {
           Aliment Sofalim
         </Button>
       </div>
-      <div className='flex flex-wrap items-center gap-2 mb-4 mt-4'>
-        <Button variant="selected" className="flex items-center" onClick={() => router.push('/admin/tables/poulettes/aliment-so')}>
+      <div className='flex flex-wrap items-center gap-2 mt-4'>
+        <Button variant="alternative" className="flex items-center" onClick={() => router.push('/admin/tables/poulettes/aliment-so')}>
           View
         </Button>
-        <Button variant="alternative" className="flex items-center" onClick={() => router.push('/admin/tables/poulettes/aliment-so/ajouter-achat')}>
+        <Button variant="selected" className="flex items-center" onClick={() => router.push('/admin/tables/poulettes/aliment-so/ajouter')}>
           Ajouter
         </Button>
       </div>
-      <li className="font-bold text-lg md:text-2xl mb-3 ml-5">Aliment Sofalim - Achat</li>
-      <iframe className="airtable-embed" src="https://airtable.com/embed/appJvZpbixGGfkieH/shraQXqFwEKP3QPHq?viewControls=on" frameBorder="0" width="100%" height="533" style={dinde}></iframe>
-
-      <div className='flex flex-wrap items-center gap-2 mb-4 mt-20'>
-        <Button variant="selected" className="flex items-center" onClick={() => router.push('/admin/tables/poulettes/aliment-so')}>
-          View
-        </Button>
-        <Button variant="alternative" className="flex items-center" onClick={() => router.push('/admin/tables/poulettes/aliment-so/ajouter-vente')}>
-          Ajouter
-        </Button>
-      </div>
-      <li className="font-bold text-lg md:text-2xl mb-3 ml-5">Aliment Sofalim - Vente</li>
-      <iframe className="airtable-embed" src="https://airtable.com/embed/appJvZpbixGGfkieH/shr11zOacFg1DweKv?viewControls=on" frameBorder="0" width="100%" height="533" style={dinde}></iframe>
+      <iframe className="airtable-embed" src="https://airtable.com/embed/appJvZpbixGGfkieH/pagSu2uIyJBvSa0Jj/form" frameBorder="0" width="100%" height="1533"></iframe>
     </main>
   );
 }

@@ -40,7 +40,7 @@ export default function VentePC() {
         <Button variant="alternative" className="flex items-center" onClick={() => router.push('/admin/tables/poulettes')}>
         Aliment Sahil / Sofalim
         </Button>
-        <Button variant="alternative" className="flex items-center" onClick={() => router.push('/admin/tables/poulettes/vente-pc')}>
+        <Button variant="clicked" className="flex items-center" onClick={() => router.push('/admin/tables/poulettes/vente-pc')}>
           Vente PC
         </Button>
         <Button variant="alternative" className="flex items-center" onClick={() => router.push('/admin/tables/poulettes/poussins')}>
@@ -50,8 +50,25 @@ export default function VentePC() {
           Reglement
         </Button>
       </div>
+      <div className='flex flex-wrap items-center gap-2 mt-4'>
+        <Button variant="selected" className="flex items-center" onClick={() => router.push('/admin/tables/poulettes/vente-pc')}>
+          View
+        </Button>
+        <Button variant="alternative" className="flex items-center" onClick={() => router.push('/admin/tables/poulettes/vente-pc/ajouter-vente')}>
+          Ajouter
+        </Button>
+      </div>
       <li className="font-bold text-lg md:text-2xl mb-3 ml-5 mt-5">Vente PC - Vente</li>
       <iframe className="airtable-embed" src="https://airtable.com/embed/appJvZpbixGGfkieH/shrXjgcwgPjvUAHx5?viewControls=on" frameBorder="0" width="100%" height="533" style={dinde}></iframe>
+
+      <div className='flex flex-wrap items-center gap-2 mb-4 mt-20'>
+        <Button variant="selected" className="flex items-center" onClick={() => router.push('/admin/tables/poulettes/vente-pc')}>
+          View
+        </Button>
+        <Button variant="alternative" className="flex items-center" onClick={() => router.push('/admin/tables/poulettes/vente-pc/ajouter-achat')}>
+          Ajouter
+        </Button>
+      </div>
       <li className="font-bold text-lg md:text-2xl mb-3 ml-5 mt-10">Vente PC - Achat</li>
       <iframe className="airtable-embed" src="https://airtable.com/embed/appJvZpbixGGfkieH/shrzd3EqAPrKlwAJ5?viewControls=on" frameBorder="0" width="100%" height="533" style={dinde}></iframe>
     </main>
