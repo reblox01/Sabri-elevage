@@ -43,7 +43,7 @@ export default function AjouterAchat() {
           Ajouter
         </Button>
       </div>
-      <iframe className="airtable-embed" src="https://airtable.com/embed/app0iPVtu3qtXyr7a/pagCyn4PshdR83tFe/form" frameBorder="0" width="100%" height="1950"></iframe>
+      <iframe className="airtable-embed" src="https://airtable.com/embed/app0iPVtu3qtXyr7a/pagCyn4PshdR83tFe/form" frameBorder="0" width="100%" height="1920"></iframe>
     </main>
   );
 }
