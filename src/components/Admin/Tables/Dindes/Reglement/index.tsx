@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 
-export default function IndexPage() {
+export default function Reglement() {
   const router = useRouter();
 
   let dinde = {
@@ -37,23 +37,23 @@ export default function IndexPage() {
       </div>
       <hr />
       <div className='flex flex-wrap items-center gap-2 mb-2 mt-4'>
-        <Button variant="clicked" className="flex items-center" onClick={() => router.push('/admin/tables/dindes')}>
+        <Button variant="alternative" className="flex items-center" onClick={() => router.push('/admin/tables/dindes')}>
           Vente Global
         </Button>
-        <Button variant="alternative" className="flex items-center" onClick={() => router.push('/admin/tables/dindes/reglement')}>
+        <Button variant="clicked" className="flex items-center" onClick={() => router.push('/admin/tables/dindes/reglement')}>
           Reglement
         </Button>
       </div>
       <div className='flex flex-wrap items-center gap-2 mb-4 mt-4'>
-        <Button variant="selected" className="flex items-center" onClick={() => router.push('/admin/tables/dindes')}>
+        <Button variant="selected" className="flex items-center" onClick={() => router.push('/admin/tables/dindes/reglement')}>
           View
         </Button>
-        <Button variant="alternative" className="flex items-center" onClick={() => router.push('/admin/tables/dindes/ajouter')}>
+        <Button variant="alternative" className="flex items-center" onClick={() => router.push('/admin/tables/dindes/reglement/ajouter')}>
           Ajouter
         </Button>
       </div>
-      <li className="font-bold text-lg md:text-2xl mb-3 ml-5 mt-5">Vente Globale</li>
-      <iframe className="airtable-embed" src="https://airtable.com/embed/app0iPVtu3qtXyr7a/shrSqrPC7YNyF8Duc?viewControls=on" frameBorder="0" width="100%" height="533" style={dinde}></iframe>
+      <li className="font-bold text-lg md:text-2xl mb-3 ml-5 mt-5">Reglement</li>
+      <iframe className="airtable-embed" src="https://airtable.com/embed/app0iPVtu3qtXyr7a/shrhnfIAS1hX2IiVc?viewControls=on" frameBorder="0" width="100%" height="533" style={dinde}></iframe>
     </main>
   );
 }

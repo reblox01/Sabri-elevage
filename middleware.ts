@@ -8,6 +8,8 @@ export const config = {
 
         // Vente Glo DC
         "/admin/tables/dindes/ajouter",
+        "/admin/tables/dindes/reglement/ajouter",
+        "/admin/tables/dindes/reglement",
 
         // Aliment sahil
         "/admin/tables/poulettes/aliment-2-sa",

@@ -1,10 +1,10 @@
-import AjouterAchat from "@/components/Admin/Tables/Dindes/Vente-Glo/Ajouter";
+import AjouterAchat from "@/components/Admin/Tables/Dindes/Reglement/Ajouter";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title:
     "Dindes | Sabri Élevage",
-  description: "This is Mostapha PC Tableau Dindes",
+  description: "This is Vente Global Regelement Tableau",
 };
 
 const AjouterAchatPage = () => {
