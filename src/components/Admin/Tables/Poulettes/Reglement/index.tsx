@@ -50,6 +50,14 @@ export default function Reglement() {
           Reglement
         </Button>
       </div>
+      <div className='flex flex-wrap items-center gap-2 mb-4 mt-4'>
+        <Button variant="selected" className="flex items-center" onClick={() => router.push('/admin/tables/poulettes/reglement')}>
+          View
+        </Button>
+        <Button variant="alternative" className="flex items-center" onClick={() => router.push('/admin/tables/poulettes/reglement/ajouter')}>
+          Ajouter
+        </Button>
+      </div>
       <li className="font-bold text-lg md:text-2xl mb-3 ml-5 mt-5">Reglement</li>
       <iframe className="airtable-embed" src="https://airtable.com/embed/appJvZpbixGGfkieH/shrIeJjS1Vaci3NK5?viewControls=on" frameBorder="0" width="100%" height="533" style={dinde}></iframe>
     </main>

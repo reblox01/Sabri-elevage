@@ -70,7 +70,7 @@ export default function AjouterVente() {
           Ajouter
         </Button>
       </div>
-      <iframe className="airtable-embed" src="https://airtable.com/embed/appJvZpbixGGfkieH/pagTXKCH7T2frCXn3/form" frameBorder="0" width="100%" height="1533"></iframe>
+      <iframe className="airtable-embed" src="https://airtable.com/embed/appJvZpbixGGfkieH/pagTXKCH7T2frCXn3/form" frameBorder="0" width="100%" height="1000"></iframe>
     </main>
   );
 }

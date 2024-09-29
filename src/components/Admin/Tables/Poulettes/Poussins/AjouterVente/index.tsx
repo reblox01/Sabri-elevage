@@ -58,7 +58,7 @@ export default function AjouterVente() {
           Ajouter
         </Button>
       </div>
-      <iframe className="airtable-embed" src="https://airtable.com/embed/appJvZpbixGGfkieH/pagDEu29gprbdfUh5/form" frameBorder="0" width="100%" height="1533"></iframe>
+      <iframe className="airtable-embed" src="https://airtable.com/embed/appJvZpbixGGfkieH/pagDEu29gprbdfUh5/form" frameBorder="0" width="100%" height="1033"></iframe>
     </main>
   );
 }
