@@ -53,7 +53,7 @@ export default function Reglement() {
         </Button>
       </div>
       <li className="font-bold text-lg md:text-2xl mb-3 ml-5 mt-5">Reglement</li>
-      <iframe className="airtable-embed" src="https://airtable.com/embed/app0iPVtu3qtXyr7a/shrhnfIAS1hX2IiVc?viewControls=on" frameBorder="0" width="100%" height="533" style={dinde}></iframe>
+      <iframe className="airtable-embed" src="https://airtable.com/embed/app0iPVtu3qtXyr7a/shrqtrR3zVPDrP9YF?viewControls=on" frameBorder="0" width="100%" height="533" style={dinde}></iframe>
     </main>
   );
 }
